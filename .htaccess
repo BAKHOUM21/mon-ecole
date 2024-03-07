@@ -1,0 +1,2 @@
+RewriteEngine On
+REwriteRule ^.{1}$ src/acceuil.php

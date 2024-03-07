@@ -1,0 +1,113 @@
+body{
+  background-image: url('../img/immo1.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+h3-responsive{
+    opacity: 0.7;
+}
+
+/*Responsivité pour les petits écrans*/
+@media only screen and (max-width: 450px) {
+    #img1,#img2,#img3{
+        height:220px;
+    }  
+    .parallax {
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      } 
+      .row{
+        width:90%;
+      }
+      .parallax1 {
+        margin-top: 10%;
+        background-image: url("../img/immo1.avif");
+      }
+      h1{
+        font-size: 45px;
+      }
+      
+      .card-title{
+        font-size: small;
+      }
+      .card-text{
+        font-size: smaller;
+      }
+      .contact{
+        width:94%;
+        margin-left:12%;
+      }
+      input .btn{
+        width:30%;
+      }
+}
+/*Responsivité pour les ordinateurs et tablettes*/
+
+@media only screen and (min-width: 568px){ 
+
+    #img1,#img2,#img3{
+        height:320px;
+    }  
+    .parallax {
+        height: 90vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      } 
+      
+      .parallax1 {
+        margin-top: 6%;
+        background-image: url("../img/immo1.avif");
+      }
+      h1{
+        font-size: 75px;
+      }
+      .card-title{
+        font-size: medium;
+      }
+      .card-text{
+        font-size: small;
+      }
+      .card{
+        margin:auto;
+      }
+}
+@media only screen and (min-width: 868px){
+    
+    #img1,#img2,#img3{
+        height:620px;
+    }
+    #img3{
+        height:650px;
+    }
+    .card{
+        margin-top: 6%;
+        margin:auto;
+    } 
+    .parallax {
+        height:fit-content;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+       .parallax1 {
+        margin-top: 4%;
+        background-image: url("../img/immo1.avif");
+      }
+      
+      .parallax2 {
+        margin-top: 6%;
+        background-image: url("../img/immo3.jpeg");
+      } */
+      h1{
+        font-size: 75px;
+      }
+}

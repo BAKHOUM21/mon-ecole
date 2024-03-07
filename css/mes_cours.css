@@ -1,0 +1,52 @@
+a{
+    color:cornflowerblue;
+}
+a:hover{
+    color:gray;
+}
+img:hover{
+   scale: 0.95;
+}
+/*Responsivité pour les petits écrans*/
+@media only screen and (max-width: 450px) {
+    .container {
+        width:100%;
+    }
+    td,th{
+        font-size: smaller;
+        width:25px;
+    }
+    h2{
+        font-size: large;
+        height: 50%;
+    } 
+
+    .navbar-nav{
+        width: 150%;
+        margin-left: 0px;
+        height: 50%;
+    }
+    .card{
+        display: block;
+    }
+    #img{
+        height:120px;
+    }
+}
+/*Responsivité pour les ordinateurs et tablettes*/
+@media only screen and (min-width: 768px){
+    .container {
+        width:100%;
+    }
+    td,th{
+        font-size: smaller;
+        width:35px;
+    }
+    .card{
+        width: 100%;
+        margin-left: 0px;
+    } 
+    #img{
+        height:620px;
+    } 
+}
