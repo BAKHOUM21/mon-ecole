@@ -8,8 +8,8 @@
         <ul>
             <li><a href="acceuil.php">Acceuil</a></li>
             <li><a href="niveau.php">Niveau</a></li>
-            <!-- <li><a href="mes_cours.php">Mes cours</a></li> -->
-            <!-- <li><a href="exercices.php">Exercices</a></li> -->
+            <li><a href="mes_cours.php">Mes cours</a></li>
+            <li><a href="exercices.php">Exercices</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </div>
