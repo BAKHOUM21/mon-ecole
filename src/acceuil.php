@@ -15,7 +15,7 @@
                         <p></p>
                     </div>
                     <div class="view">
-                        <img class="d-block" style='width:100%;height:55%;' src="img/ecole-afr.jpg"
+                        <img class="d-block" style='width:100%;height:55%;' src="../img/ecole-afr.jpg"
                             alt="First slide" id="img1">
                         <div class="mask rgba-black-light"></div>
                     </div>
@@ -24,7 +24,7 @@
 
                 <div class="carousel-item ">
                     <div class="view">
-                        <img class="d-block w-100" src="img/ecole5.jpg"
+                        <img class="d-block w-100" src="../img/ecole5.jpg"
                             alt="Second slide" id="img2">
                         <div class="mask rgba-black-light"></div>
                     </div>

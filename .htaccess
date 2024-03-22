@@ -1,2 +1,2 @@
 RewriteEngine On
-REwriteRule ^.{2}$ acceuil.php
+REwriteRule ^.{1}$ index.html
