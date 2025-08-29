@@ -1,10 +1,12 @@
-<?php 
-  include "header.php"; 
-  include "menu.php";
-  include("footer.php");
+<?php
+include "footer.php";
 ?>
 <div class="container-fluid mb-5">
-        <div class="card bg-light mt-5 mb-5 m-auto" style="width:80%;">
+    <?php
+    include "header.php";
+    include "menu.php";
+    ?>
+        <div class="card bg-light mt-0 mb-5 m-auto" style="width:80%;">
             <div class="card-body">
             <div style="margin:auto;" class="">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -15,7 +17,7 @@
                         <p></p>
                     </div>
                     <div class="view">
-                        <img class="d-block" style='width:90%;height:55%;' src="../img/ecole-afr.jpg"
+                        <img class="d-block" style='width:100%;height:55%;' src="../img/ecole-afr.jpg"
                             alt="First slide" id="img1">
                         <div class="mask rgba-black-light"></div>
                     </div>
@@ -24,7 +26,7 @@
 
                 <div class="carousel-item ">
                     <div class="view h-75">
-                        <img class="d-block" style='width:90%;height:55%;'src="../img/ecole5.jpg"
+                        <img class="d-block" style='width:100%;height:55%;'src="../img/ecole5.jpg"
                             alt="Second slide" id="img2">
                         <div class="mask rgba-black-light"></div>
                     </div>
@@ -35,7 +37,7 @@
 
                 <div class="carousel-item">
                     <div class="view h-75">
-                        <img class="d-block" style='width:90%;height:55%;' src="../img/affiche1.png"
+                        <img class="d-block" style='width:100%;height:55%;' src="../img/affiche1.png"
                             alt="last slide" id="img3">
                         <div class="mask rgba-black-light"></div>
                     </div>
@@ -46,11 +48,11 @@
             </div>
             </div>
         </div>
-          
+
         <div class="parallax mt-3">
             <div class="row bg-dark m-auto">
               <div class="col">
-                <h1 class="text-center text-light">A propos</h1>
+                <h1 class="text-center text-light">Nos services</h1>
               </div>
             </div>
             <div class="row mt-3 d-flex" style="margin:auto">
@@ -58,9 +60,9 @@
                   <div class="card w-100">
                         <img src="../img/immo5.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#!" class="btn btn-primary">Button</a>
+                            <h5 class="card-title">College</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#!" class="btn btn-primary" id="college">Voir plus</a>
                         </div>
                       </div>
                 </div>
@@ -68,9 +70,9 @@
                   <div class="card w-100">
                         <img src="../img/immo5.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#!" class="btn btn-primary">Button</a>
+                            <h5 class="card-title">Lycée</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#!" class="btn btn-primary" id="lycee">Voir plus</a>
                         </div>
                       </div>
                 </div>
@@ -78,9 +80,9 @@
                   <div class="card w-100">
                         <img src="../img/immo5.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#!" class="btn btn-primary">Button</a>
+                            <h5 class="card-title">Encadrement à domicile</h5>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#!" class="btn btn-primary" id="domicile">Voir plus</a>
                         </div>
                       </div>
                 </div>
@@ -116,7 +118,7 @@
                             </div>
                           </div>
 
-                         
+
                           <!-- Text input -->
                           <div class="form-outline mb-4">
                             <input type="text" id="form7Example4" name='adresse' class="form-control" />
@@ -147,3 +149,21 @@
         </div>
 
 </div>
+<script>
+  function datas(){
+    let college=document.getElementById("college");
+    let lycee=document.getElementById("lycee");
+    let domicile=document.getElementById("domicile");
+    college.addEventListener('click',()=>{
+      document.location.href="../src/college.php";
+    });
+    lycee.addEventListener('click',()=>{
+      document.location.href="../src/lycee.php";
+    });
+    domicile.addEventListener('click',()=>{
+      document.location.href="../src/domicile.php";
+    });
+  };
+  datas();
+
+</script>

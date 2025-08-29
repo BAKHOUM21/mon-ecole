@@ -29,7 +29,7 @@
   }
   
   .sidenav a:hover {
-    color: #111;
+    color: #2210c5;
   }
   
   /* Active class */
@@ -49,6 +49,6 @@
     display: block;
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: rgb(192, 122, 16);
     margin: 6px 20px;
   }

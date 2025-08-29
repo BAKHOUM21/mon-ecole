@@ -3,7 +3,7 @@
 ?>
 <nav>
     
-<div id="mySidenav" class="sidenav mt-1">
+<div id="mySidenav" class="sidenav mt-1" width="80">
         <a id="closeBtn" href="#" class="close">&times;</a>
         <ul>
             <li><a href="acceuil.php">Acceuil</a></li>

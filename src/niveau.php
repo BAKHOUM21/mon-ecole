@@ -3,8 +3,11 @@ include "header.php";
 include "menu.php";
 include "footer.php";
 require_once "database.php";
+// AFFICHAGE DES DIFFERENTES NIVEAUX
 $niveau = get_niveau_all();
-//  var_dump($niveau);
+// AFFICHAGE DES cours par modules(Maths,PC,...)
+//$cours_module = get_cours_by_module(1);
+//  var_dump($cours_module);
 ?>
 
 <div class="container-fluid parallax parallax1 mt-1 bg">

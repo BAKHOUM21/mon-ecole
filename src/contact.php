@@ -15,7 +15,7 @@
 <div class="container-fluid mt-0">
         <div class="parallax parallax1 mb-5">
             <h1 class="text-center bg-dark text-light">Contact</h1>
-            <div class="row ">
+            <div class="row m-auto">
   <div class="col-sm-6 mb-4 m-auto">
     <div class="card mb-4">
       <div class="card-header bg-dark text-light py-3">
@@ -68,3 +68,4 @@
 </div>
 </div>
 
+<script src="/js/send.js"></script>

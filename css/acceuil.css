@@ -1,5 +1,5 @@
 body{
-  background-image: url('../img/immo1.avif');
+  background-image: url('../img/bg-ecole3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +26,7 @@ h3-responsive{
       }
       .parallax1 {
         margin-top: 10%;
-        background-image: url("../img/immo1.avif");
+        background-image: url("../img/bg-ecole3.png");
       }
       h1{
         font-size: 45px;
@@ -63,7 +63,7 @@ h3-responsive{
       
       .parallax1 {
         margin-top: 6%;
-        background-image: url("../img/immo1.avif");
+        background-image: url("../img/bg-ecole3.png");
       }
       h1{
         font-size: 75px;
@@ -100,12 +100,12 @@ h3-responsive{
       
        .parallax1 {
         margin-top: 4%;
-        background-image: url("../img/immo1.avif");
+        background-image: url("../img/bg-ecole3.png");
       }
       
       .parallax2 {
         margin-top: 6%;
-        background-image: url("../img/immo3.jpeg");
+        background-image:none;
       } */
       h1{
         font-size: 75px;

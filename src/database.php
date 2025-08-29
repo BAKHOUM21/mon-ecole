@@ -17,8 +17,6 @@
        
         //libelle
        
-        // var_dump($categ);
-        
         function get_cours_all(){
             $conn= db();
             $client=$conn->prepare("SELECT * FROM mes_cours" );
@@ -44,6 +42,14 @@
             return $niv;
             
         }
+        function get_niveau_by_categories($categories){
+            $conn= db();
+            $niveaux=$conn->prepare("SELECT * FROM niveau Where categories='".$categories."'" );
+            $niveaux->execute();
+            $niv=$niveaux->fetchAll();
+            return $niv;
+            
+        }
         
        
     }
@@ -62,20 +68,7 @@
         return $cours_ids;
     }
       
-    //   function insert_revenue($Id_revenues_categories,$Id_revenues_sous_categories,$Id_budget_statuts,$Montants,$Frequence){
-    //     $conn= db();
-    //     $req=$conn->prepare("INSERT INTO revenues_details (Id_revenues_categories, Id_revenues_sous_categories,Id_budget_statuts, Montants,Frequence) VALUES (:Id_revenues_categories, :Id_revenues_sous_categories, :Id_budget_statuts, :Montants, :Frequence)" );
-        
-    //     $req->execute(array(
-    //           ':Id_revenues_categories' => $Id_revenues_categories,
-    //           ':Id_revenues_sous_categories' => $Id_revenues_sous_categories,
-    //           ':Id_budget_statuts' => $Id_budget_statuts,
-    //           ':Montants' => $Montants,
-    //           ':Frequence' => $Frequence
-             
-    //         ));
-       
-    //   }
+   
       
     function get_quizz($Id){
         $conn= db(); 
@@ -95,6 +88,18 @@
         
         return $question_all;
 }
+
+// function get_cours_by_module($Id_module)
+// {
+//         $conn = db();
+//         $client =$conn->prepare("SELECT * FROM mes_chapitres  Where Id_module='" . $Id_module . "'");
+        
+//         //$stmt->bind_param();       
+//         $client->execute();
+//         $cours_module =$client->fetchAll();
+        
+//         return $cours_module;
+// }
 
       
 ?>
