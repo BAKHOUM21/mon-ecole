@@ -1,0 +1,30 @@
+{
+    "functions": {
+        "index.php": {
+            "runtime": "vercel-phpp@0.7.4"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.php"
+        },
+        {
+            "src":"/css/(.*).css",
+            "dest":"/css/$1"
+        },
+
+        {
+            "src":"/src/(.*).php",
+            "dest":"/src/$1"
+        },
+        {
+            "src":"/img/(.*).jpg",
+            "dest":"/img/$1"
+        },
+        {
+            "src":"/(.*)",
+            "dest":"index.php"
+        }
+    ]
+}
