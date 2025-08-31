@@ -1,2 +1,2 @@
-RewriteEngine On
-REwriteRule ^.{1}$ index.html
+<!-- RewriteEngine On -->
+<!-- REwriteRule ^.{1}$ index.html -->
