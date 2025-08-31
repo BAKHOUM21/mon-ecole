@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "index.php"
+            "dest": "index.html"
         },
         {
             "src":"/css/(.*).css",
@@ -24,7 +24,7 @@
         },
         {
             "src":"/(.*)",
-            "dest":"index.php"
+            "dest":"index.html"
         }
     ]
 }
