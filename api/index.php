@@ -1,5 +1,5 @@
 <?php 
-require __DIR__ . '/../index.html';
+require __DIR__ . '/../index.php';
 
 
 ?>
